@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-color:#b9f542;
+}
+
+* {
+  font-family: "Parkinsans", sans-serif;
+}
+
+/*css color for hero text*/
+.hero-text {
+  background: linear-gradient(-150deg,#575958, #ffffff);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
