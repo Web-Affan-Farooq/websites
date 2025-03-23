@@ -32,7 +32,7 @@ export default function RootLayout({
           <div className="bg-black w-full h-screen">
           <Header/>
         {children}
-        <Footer/>
+        {/* <Footer/> */}
           </div>
       </body>
     </html>
