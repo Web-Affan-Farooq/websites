@@ -6,6 +6,7 @@
 
 :root {
   --font-inter:"Inter", sans-serif;
+  --image-banner-1:url("/images/banner-1.png")
 }
 
 @theme {
