@@ -7,7 +7,7 @@ const Header = () => {
     const [navStatus, setnavStatus] = useState(false);
 
     return (
-        <header className='w-full fixed text-white bg-[var(--faun-light)] 
+        <header className='z-10 w-full fixed text-white bg-[var(--faun-light)] 
         2xl:px-[60px] 2xl:py-[20px]
          xl:px-[60px] xl:py-[20px]
          lg:px-[60px] lg:py-[20px]
@@ -44,8 +44,8 @@ max-sm:text-[28px]
 
 
             <div className='hidden sm:flex flex-row flex-nowrap justify-center items-center gap-4'>
-                <Link href={"/marketplace"} className=''>
-                    Marketplace
+                <Link href={"/"} className=''>
+                    Home
                 </Link>
                 <Link href={"/marketplace"} className=''>
                     Marketplace
@@ -75,16 +75,18 @@ max-sm:text-[28px]
 
             <div className='flex flex-row flex-nowrap justify-center items-center gap-4'>
                 {[
-                    { src: "/icons/heart.svg", alt: "liked items" },
-                    { src: "/icons/profile.svg", alt: "profile" },
-                    { src: "/icons/cart.svg", alt: "cart" },
+                    { src: "/icons/heart.svg", alt: "liked items", link: "/liked" },
+                    { src: "/icons/profile.svg", alt: "profile", link: "/profile" },
+                    { src: "/icons/cart.svg", alt: "cart", link: "/cart" },
                 ].map((icon, index) => (
-                    <div className='relative w-5 h-5 sm:w-5 sm:h-5 md:w-5 md:h-5' key={index}>
-                        <Image src={icon.src} alt={icon.alt} fill className="object-contain" />
-                        <span className='absolute bg-red-600 text-xs right-[-8px] bottom-[10px] rounded-full w-[18px] h-[18px] flex justify-center items-center text-white'>
-                            1
-                        </span>
-                    </div>
+                    <Link href={icon.link} key={index}>
+                        <div className='relative w-5 h-5 sm:w-5 sm:h-5 md:w-5 md:h-5'>
+                            <Image src={icon.src} alt={icon.alt} fill className="object-contain" />
+                            <span className='absolute bg-red-600 text-xs right-[-8px] bottom-[10px] rounded-full w-[18px] h-[18px] flex justify-center items-center text-white'>
+                                1
+                            </span>
+                        </div>
+                    </Link>
                 ))}
             </div>
 

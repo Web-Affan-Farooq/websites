@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Marketplace = () => {
+const LikedItems = () => {
   return (
     <main>
         <article>
-            Marketplace
+            Liked items
         </article>
     </main>
   )
 }
 
-export default Marketplace
+export default LikedItems

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Marketplace = () => {
+const Profile = () => {
   return (
     <main>
         <article>
-            Marketplace
+            profile
         </article>
     </main>
   )
 }
 
-export default Marketplace
+export default Profile
