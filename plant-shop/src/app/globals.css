@@ -5,10 +5,11 @@
 
 
 :root {
-  --font-inter:"Inter", sans-serif;
-  --image-banner-1:url("/images/banner-1.png")
+  --font-inter: "Inter", sans-serif;
+  --color-green-mud: #222C1D;
+   --image-banner-1:url("/images/banner-1.png")
 }
 
 @theme {
-  --font-inter:var(--font-inter)
+  --font-inter: var(--font-inter)
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className='bg-green-mud border-2 border-solid border-white'></footer>
   )
 }
 
-export default Footer
+export default Footer;
