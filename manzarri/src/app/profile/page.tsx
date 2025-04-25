@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <main>
         <article>
-            profile
+          
         </article>
     </main>
   )
